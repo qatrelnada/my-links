@@ -1,0 +1,30 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        //- Especially for Internet Explorer users.
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        //- To make the page responsive.
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name='author' content='Qatr El-Nada Souka')
+        //- To appear in search engine results.
+        meta(name='description' content='My Links')
+        include includes/styles
+        include includes/scripts
+        title myPage
+    body
+        header
+            nav
+                section(class='mode' onclick='changeMood()')
+                    i(id='mood-icon' class='fas fa-adjust fa-2x')
+        main
+            img(class='img logo' src='Q.S.png' alt='logo')
+            h1#name Qatr El-Nada Souka
+            section
+                a(class='link' href='https://github.com/qatrelnada' target='_blank')
+                    i(class='fab fa-github-square fa-2x')
+                a(class='link' href='https://www.linkedin.com/in/qatr-el-nada-souka/' target='_blank')
+                    i(class='fab fa-linkedin fa-2x')
+                a(class='link' href='mailto:qatrelnadasouka@gmail.com' target='_blank')
+                    i(class='fas fa-envelope-square fa-2x')
+        footer#footer &copy; Qatr El-Nada S.
